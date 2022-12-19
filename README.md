@@ -4,6 +4,7 @@
 [Klik her for at se showcase ](https://www.google.com)
 
 # Config Features
+- Mulighed for at vælge hvilket framework man benytter
 - Mulighed for at vælge om man skal modtage items eller penge
 - Mulighed for at vælge om det er sorte eller hvide penge man modtager
 - Mulighed for at justere højste og mindste værdi for penge reward
