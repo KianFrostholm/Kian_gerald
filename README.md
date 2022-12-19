@@ -1,7 +1,7 @@
 # Kian_gerald
  Dette er et simpelt drugrun script med nogle cutscenes fra GTA Online
 
-[Klik her for at se showcase ](https://www.google.com)
+[Klik her for at se showcase ](https://youtu.be/jdS_Y-2Su-k)
 
 # Config Features
 - Mulighed for at vælge hvilket framework man benytter
