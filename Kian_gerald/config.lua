@@ -59,5 +59,4 @@ Lang = {
     ['hent_pakke']         	    = 'Hent pakken og aflever den til Gerald',
     ['deliver_gerald']          = 'Køre tilbage og aflever pakken til Gerald',
     ['cooldown']         	    = '~r~Nedkøling',
-    ['progressbar']             = 'Tager pakke',
   }
