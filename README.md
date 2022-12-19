@@ -1,6 +1,7 @@
 # Kian_gerald
  Dette er et simpelt drugrun script med nogle cutscenes fra GTA Online
 
+[Klik her for at se showcase ](https://www.google.com)
 
 # Config Features
 - Mulighed for at vælge om man skal modtage items eller penge
@@ -18,10 +19,7 @@
 # FlaxHosting
 - Scriptet er lavet i sammenarbejde med FlaxHosting
 
-
 - Skud ud til FlaxDoe for hjælpe med showcase og scriptet
-
-[Klik her for at se showcase ](https://www.google.com)
 
 # Fejl og Mangler
 - Hvis du finder en fejl eller mener der er noget som burde ændres er du velkommen til at oprette en issue så vi kan se nærmere på det
