@@ -25,7 +25,7 @@ local HasItem = false
 local Doneit = false
 
 
-function Notify(titel, msg, tid, type)
+function Notify(titel, msg, tid, type) -- Her kan man tilføje sit eget notify
     exports['okokNotify']:Alert(titel, msg, tonumber(tid), type)
 end
 
@@ -172,7 +172,6 @@ end)
 function pickupPackage()
     loadAnimDict('pickup_object')
     TaskPlayAnim(PlayerPedId(),'pickup_object', 'pickup_low',5.0, 1.5, 1.0, 48, 0.0, 0, 0, 0)
-    exports['progressBars']:startUI(1000, Lang['progressbar'])
     Wait(1000)
     TriggerServerEvent('Kian_gerald:RecivePackage')
     Notify('Gerald', Lang['deliver_gerald'], 5000, 'info')
