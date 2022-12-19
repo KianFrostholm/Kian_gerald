@@ -89,7 +89,7 @@ if Config.Framework == 'VRP' then
         local result = MySQL.Sync.fetchAll("SELECT * FROM Kian_gerald WHERE user_id = @user_id", {user_id = user_id})
 
         if user_id ~= nil then
-            if result then
+            if #result > 0 then
                 MySQL.Async.execute("UPDATE Kian_gerald SET lamar = @lamar WHERE user_id = @user_id", {user_id = user_id, lamar = status})
             else
                 MySQL.Async.execute("INSERT INTO Kian_gerald (user_id, lamar) VALUES(@user_id, @lamar)", {user_id = user_id, lamar = status})
@@ -102,7 +102,7 @@ if Config.Framework == 'VRP' then
 
         if user_id ~= nil then
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = user_id}, function(result)
-                if result then
+                if #result > 0 then
                     if result[1].times >= Config.Runs then
                         cb(true)
                     else
@@ -132,9 +132,7 @@ if Config.Framework == 'VRP' then
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = user_id}, function(result)
                 if #result > 0 then
                     cb(result[1].lamar)
-                else
-		    cb(0)
-		end
+                end
             end)
         end
     end)
@@ -232,7 +230,7 @@ else    -- ESX KODE --
         local result = MySQL.Sync.fetchAll("SELECT * FROM Kian_gerald WHERE user_id = @user_id", {user_id = identifier})
 
         if user_id ~= nil then
-            if result then
+            if #result > 0 then
                 MySQL.Async.execute("UPDATE Kian_gerald SET lamar = @lamar WHERE user_id = @user_id", {user_id = identifier, lamar = status})
             else
                 MySQL.Async.execute("INSERT INTO Kian_gerald (user_id, lamar) VALUES(@user_id, @lamar)", {user_id = identifier, lamar = status})
@@ -246,7 +244,7 @@ else    -- ESX KODE --
 
         if user_id ~= nil then
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = identifier}, function(result)
-                if result then
+                if #result > 0 then
                     if result[1].times >= Config.Runs then
                         cb(true)
                     else
