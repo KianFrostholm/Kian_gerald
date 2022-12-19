@@ -130,8 +130,11 @@ if Config.Framework == 'VRP' then
 
         if user_id ~= nil then
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = user_id}, function(result)
-
-                cb(result[1].lamar)
+                if #result > 0 then
+                    cb(result[1].lamar)
+                else
+		    cb(0)
+		end
             end)
         end
     end)
