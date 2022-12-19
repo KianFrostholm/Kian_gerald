@@ -1,4 +1,6 @@
 Config = {
+    Framework = 'VRP', -- Vælg framework ESX/VRP
+
     Dirtymoney = false, -- Skal man modtage sorte penge true/false
     DirtyItem = 'dirty_money', -- Item til sorte penge
     
@@ -16,7 +18,7 @@ Config = {
 
     Interval = 5000, -- Update interval
 
-    Locations = {
+    Locations = { -- Lokationer hvor pakken kan generate
         {x = -1700.739, y = -1127.168,  z = 13.152},
         {x = -52.955,   y = -1314.527,  z = 29.221},
         {x = 196.941,   y = -1493.847,  z = 29.141},
