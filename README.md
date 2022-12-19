@@ -21,7 +21,7 @@
 
 - Skud ud til FlaxDoe for hjælpe med showcase og scriptet
 
-Showcase: 
+[Showcase: ](https://www.google.com)
 
 # Fejl og Mangler
 - Hvis du finder en fejl eller mener der er noget som burde ændres er du velkommen til at oprette en issue så vi kan se nærmere på det
