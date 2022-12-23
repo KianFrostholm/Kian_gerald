@@ -274,9 +274,11 @@ else    -- ESX KODE --
         local identifier = GetPlayerIdentifiers(source)[1]
 
         if user_id ~= nil then
+            if #result > 0 then		
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = identifier}, function(result)
                 cb(result[1].lamar)
             end)
+	end
         end
     end)
 
