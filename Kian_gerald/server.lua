@@ -273,12 +273,12 @@ else    -- ESX KODE --
         local user_id = ESX.GetPlayerFromId(source)
         local identifier = GetPlayerIdentifiers(source)[1]
 
-        if user_id ~= nil then
-            if #result > 0 then		
+        if user_id ~= nil then	
             MySQL.Async.fetchAll('SELECT * FROM kian_gerald WHERE user_id = @user_id', {user_id = identifier}, function(result)
-                cb(result[1].lamar)
+		if #result > 0 then	
+                   cb(result[1].lamar)
+		end					
             end)
-	end
         end
     end)
 
